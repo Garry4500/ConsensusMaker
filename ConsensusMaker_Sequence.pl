@@ -113,7 +113,7 @@ else
 	    {
 		$a = $a + 1;
 	    }
-	    elsif (${$matrix[$k]}[$i] eq "T")
+	    elsif (${$matrix[$k]}[$i] eq "U")
 	    {
 		$t = $t + 1;
 	    }
@@ -142,7 +142,7 @@ else
 	    }
 	    elsif ($t > $a and $t > $g and $t > $c and $t > $d and $t >= $con)
 	    {
-		push (@consensus, "T");
+		push (@consensus, "U");
 	    }
 	    elsif ($g > $a and $g > $t and $g > $c and $g > $d and $g >= $con)
 	    {
@@ -168,7 +168,7 @@ else
 	    }
 	    elsif ($t > $a and $t > $g and $t > $c and $t >= $con - $d and $d == 0)
 	    {
-		push (@consensus, "T");
+		push (@consensus, "U");
 	    }
 	    elsif ($g > $a and $g > $t and $g > $c and $g >= $con - $d and $d == 0)
 	    {
