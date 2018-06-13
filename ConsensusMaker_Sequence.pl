@@ -184,7 +184,7 @@ else
 	    }
 	    else
 	    {
-	    	print "Luecke beachtet, Spalte entfernt.";
+	    	print "Luecke beachtet, Spalte entfernt.\n";
 	    }
 	}
 	
