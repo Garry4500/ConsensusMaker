@@ -155,21 +155,25 @@ else
 
 	elsif ($lucke eq "no")
 	{
-	    if ($a > $b and $a > $c and $a > $d and $a >= $con - $d)
+	    if ($a > $b and $a > $c and $a > $d and $a >= $con - $d and $d == 0)
 	    {
 		push (@consensus, "(");
 	    }
-	    elsif ($b > $a and $b > $c and $b > $d and $b >= $con - $d)
+	    elsif ($b > $a and $b > $c and $b > $d and $b >= $con - $d and $d == 0)
 	    {
 		push (@consensus, ")");
 	    }
-	    elsif ($c > $a and $c > $b and $c > $d and $c >= $con - $d)
+	    elsif ($c > $a and $c > $b and $c > $d and $c >= $con - $d and $d == 0)
 	    {
 		push (@consensus, ".");
 	    }
+	    elsif ($d == 0)
+	    {
+	    	push (@consensus, "-");
+	    }
 	    else
 	    {
-		push (@consensus, "-");
+	    	print "Luecke beachtet, Spalte entfernt.";
 	    }
 	}
 	
