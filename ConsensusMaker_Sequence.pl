@@ -162,25 +162,29 @@ else
 
 	elsif ($lucke eq "no")
 	{
-	    if ($a > $t and $a > $g and $a > $c and $a >= $con - $d)
+	    if ($a > $t and $a > $g and $a > $c and $a >= $con - $d and $d == 0)
 	    {
 		push (@consensus, "A");
 	    }
-	    elsif ($t > $a and $t > $g and $t > $c and $t >= $con - $d)
+	    elsif ($t > $a and $t > $g and $t > $c and $t >= $con - $d and $d == 0)
 	    {
 		push (@consensus, "T");
 	    }
-	    elsif ($g > $a and $g > $t and $g > $c and $g >= $con - $d)
+	    elsif ($g > $a and $g > $t and $g > $c and $g >= $con - $d and $d == 0)
 	    {
 		push (@consensus, "G");
 	    }
-	    elsif ($c > $a and $c > $t and $c > $g and $c >= $con - $d)
+	    elsif ($c > $a and $c > $t and $c > $g and $c >= $con - $d and $d == 0)
 	    {
 		push (@consensus, "C");
 	    }
-	    else
+	    elsif ($d == 0)
 	    {
 		push (@consensus, "-");
+	    }
+	    else
+	    {
+	    	print "Luecke beachtet, Spalte entfernt.";
 	    }
 	}
 	
