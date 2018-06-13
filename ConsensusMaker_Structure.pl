@@ -202,4 +202,4 @@ for $elem1 (@consensus)
     close(AUSGABE);
 }
 
-print "Consensus fertig!";
+print "\nConsensus fertig!\n";
