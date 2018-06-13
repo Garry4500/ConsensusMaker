@@ -192,12 +192,12 @@ my $elem1;
 
 #!!!!! Alte Output-Datei wird überschrieben !!!!!
 
-open(AUSGABE, ">./Output/Output.consmade") or die $!;
+open(AUSGABE, ">./Output/Output.consmadestr") or die $!;
 close(AUSGABE);
 
 for $elem1 (@consensus)
 {
-    open(AUSGABE, ">>./Output/Output.consmade") or die $!;
+    open(AUSGABE, ">>./Output/Output.consmadestr") or die $!;
     print AUSGABE "$elem1";
     close(AUSGABE);
 }
