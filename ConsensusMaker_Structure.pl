@@ -72,7 +72,7 @@ else
 
     my $zahl = ( $#xfasta + 1 ) / 3;
 
-    print "Das Alignment ummfasst $zahl Sequenzen.\n\n";
+    print "Das Alignment ummfasst $zahl Sequenzen.\n\nConsensus wird berechnet.\n\n";
 
 #Einlesen der Dateien
 
@@ -182,7 +182,7 @@ else
     }
 }
 
-#Ausgabe, später auch in Datei
+#Ausgabe
 
 my $elem1;
 
@@ -197,3 +197,5 @@ for $elem1 (@consensus)
     print AUSGABE "$elem1";
     close(AUSGABE);
 }
+
+print "Consensus fertig!";
