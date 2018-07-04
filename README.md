@@ -5,9 +5,7 @@ This program comes with no warranty!
 
 This program is in beta.
 
-Consensus of EVERY SINGLE COLUMN in an alignment and won't work for traditional consensus-making!
-
-New version with consensus by matching pairs comming soon.
+Consensus of matching pairs indices.
 
 Input must be in .xfasta format!
 
